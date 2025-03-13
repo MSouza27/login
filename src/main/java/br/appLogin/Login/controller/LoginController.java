@@ -38,7 +38,7 @@ public class LoginController {
 
     @PostMapping("/logar")
     public String loginUsuario(Usuario usuario, Model model, HttpServletResponse response){
-        System.out.println("Tentando logar com email" + usuario.getEmail());
+        System.out.println("Tentando logar com email!" + usuario.getEmail());
         Usuario usuarioLogado = this.user.login(usuario.getEmail(), usuario.getSenha());
         if (usuarioLogado != null){
             System.out.println("Usuário logado com sucesso!");
