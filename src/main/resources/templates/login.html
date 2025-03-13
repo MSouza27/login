@@ -240,24 +240,17 @@
         <div class="logo-circle"></div>
     </div>
     <h2>Bem-vindo(a) de volta</h2>
-    <form action= "/logar" method="POST">
+    <form action="/logar" method="POST">
+        <!-- Campo de Email -->
         <div class="input-group">
             <i class="icon-user"></i>
-            <input type="text" placeholder="Usuário ou Email" required>
-        </div>
-        <div class="input-group">
-            <i class="icon-lock"></i>
-            <input type="password" placeholder="Senha" required>
+            <input type="email" name="email" placeholder="Usuário ou Email" required> <!-- Corrigido o type para email e adicionado name -->
         </div>
 
-        <div class="remember-forgot">
-            <div class="remember-me">
-                <input type="checkbox" id="remember">
-                <label for="remember">Lembrar-me</label>
-            </div>
-            <div class="forgot-password">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
+        <!-- Campo de Senha -->
+        <div class="input-group">
+            <i class="icon-lock"></i>
+            <input type="password" name="senha" placeholder="Senha" required> <!-- Adicionado name -->
         </div>
 
         <button type="submit" class="login-button">Entrar</button>
