@@ -52,18 +52,10 @@ public class LoginController {
             return "redirect:/";
         }
 
-        model.addAttribute("erro", "Usuário Invalido");
+        model.addAttribute("erro", "Usuário Invalido!");
         return "login";
 
     }
-
-
-
-
-
-
-
-
 
 
     @GetMapping("/cadastro")
