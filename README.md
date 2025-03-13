@@ -53,6 +53,3 @@ O sistema estará disponível em `http://localhost:8080`.
 ## Contribuição
 Fique à vontade para abrir um pull request ou relatar problemas na aba "Issues" do repositório.
 
-## Licença
-Este projeto está sob a licença MIT.
-
