@@ -44,7 +44,7 @@ public class LoginController {
         }
 
         model.addAttribute("erro", "Usuário Invalido");
-        return "/dados";
+        return "login";
 
     }
 
